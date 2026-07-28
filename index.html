@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search & Bookmark Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            🎬 MovieFinder
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>Movie Search & Bookmark Manager</h1>
+
+        <p>
+            Search movies, save bookmarks and manage them instantly.
+        </p>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search-section">
+
+        <form id="searchForm">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search movies..."
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+        <small id="error">
+            Please enter a movie name.
+        </small>
+
+    </section>
+
+    <!-- Search Results -->
+
+    <section class="container">
+
+        <h2>🎥 Search Results</h2>
+
+        <div id="movieContainer" class="movies">
+
+        </div>
+
+    </section>
+
+    <!-- Saved Bookmarks -->
+
+    <section class="container">
+
+        <h2>⭐ Saved Bookmarks</h2>
+
+        <div class="bookmark-toolbar">
+
+            <input
+                type="text"
+                id="bookmarkSearch"
+                placeholder="Filter saved bookmarks..."
+            >
+
+            <button id="clearAllBtn">
+                🗑 Clear All
+            </button>
+
+        </div>
+
+        <div id="bookmarkContainer" class="movies">
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Designed By <strong>Momna Saeed</strong> ❤️
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
